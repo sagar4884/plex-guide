@@ -21,16 +21,16 @@ theme:
   palette:
     - scheme: slate
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
-      primary: teal
-      accent: lime
+      primary: black
+      accent: custom
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
-      primary: teal
-      accent: purple
+      primary: black
+      accent: custom
 
 nav:
   - Introduction: index.md
@@ -117,11 +117,11 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
-      name: Your Name @ Github
-    - icon: fontawesome/brands/discord
-      link: https://your-discord-link
-      name: Discord Channel
-    - icon: fontawesome/solid/globe
-      link: https://your-website.com
-      name: Personal Website
+      link: https://github.com/sagar4884
+      name: sagar4884 @ Github
+#    - icon: fontawesome/brands/discord
+#      link: https://your-discord-link
+#      name: Discord Channel
+#    - icon: fontawesome/solid/globe
+#      link: https://your-website.com
+#      name: Personal Website
