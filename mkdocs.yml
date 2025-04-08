@@ -1,0 +1,118 @@
+site_name: your-site-name # Replace with your site name
+site_url: https://your-domain.com # Replace with your site URL
+theme:
+  name: material
+  logo: assets/images/plex-logo.webp # Replace with your logo
+  custom_dir: docs/overrides
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+nav:
+  - Preamble: index.md
+  - What is Plex?: what-is-plex.md
+  - Is Plex safe to use?: plex-safety.md
+  - Pinning Libraries: pinning-libraries.md
+  - Managing Newsletter Subscriptions: unsubscribe-from-plex-newsletter.md
+  - Disabling Online Media Sources: disabling-online-media-sources.md
+  - Requesting Content: requesting-content.md
+  - Changing Plex streaming quality:
+    - changing-stream-quality/index.md
+    - iOS & Android: changing-stream-quality/ios-android.md
+    - tvOS (Apple TV): changing-stream-quality/tv-os.md
+    - Amazon Fire TV, Android TV, PlayStation 4/5, Xbox, Roku, Smart TV (LG, Samsung, VIZIO): changing-stream-quality/streaming-devices.md
+    - Web Browser: changing-stream-quality/web-browser.md
+  - FAQ:
+    - What is transcoding?: faq/what-is-transcoding.md
+    - Why do I need to buy the Plex app on my phone?: faq/why-do-i-to-buy-plex-app.md
+    - My video won't stop buffering: faq/wont-stop-buffering.md
+    - Help, I forgot my Plex password!: faq/forgot-password.md
+    - How do I add items to my Plex Universal Watchlist?: faq/adding-to-universal-watchlist.md
+    - Responsible Content Requesting: faq/responsible-content-requests.md
+    - I requested something an hour ago but it hasn't shown up yet. Why?: faq/missing-requests.md
+    - I'm having a problem with a Movie or TV Show: faq/content-issues.md
+    - Content Quality and Language Options: faq/special-requests.md
+    - I don't want to use this request thingy, can't I just tell you what I want?: faq/i-dont-want-to-use-overseerr.md
+    - Missing Confirmation Emails: faq/missing-emails.md
+    - Can I share your Plex server with someone else?: faq/can-i-share-your-plex.md
+    - Plex is awesome! Can I send you some money to support it?: faq/how-can-i-support-you.md
+    - Why Bitrate Matters: faq/why-bitrate-matters.md
+  - Useful Links: useful-links.md
+  - ↪ Logout: javascript:window.location.href='/auth/logout'
+
+plugins:
+  - search
+  - mkdocs-video
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - git-committers:
+      repository: YourUsername/your-repo-name # Replace with your repo
+      branch: main # Or your default branch
+      exclude_committers:
+        - "web-flow"  # GitHub web UI edits
+        - "actions-user"  # GitHub Actions
+        - "github-actions[bot]"  # GitHub Actions bot
+      token: !ENV GITHUB_TOKEN
+
+markdown_extensions:
+  - toc:
+      toc_depth: 1
+  - pymdownx.blocks.caption
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: Copyright &copy; 2025 Your Name # Replace with your name
+
+extra_css:
+  - assets/css/extra.css
+
+# Update/Remove all of your socials
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+      name: Your Name @ Github
+    - icon: fontawesome/brands/discord
+      link: https://your-discord-link
+      name: Discord Channel
+    - icon: fontawesome/solid/globe
+      link: https://your-website.com
+      name: Personal Website

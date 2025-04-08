@@ -1,0 +1,150 @@
+html {
+  background: #282a2d;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/auth/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #282a2d;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 500px;
+  margin: 1rem;
+  background: rgba(40, 42, 45, 0.9);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.plex-button {
+  background: #cc7b19;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.plex-button:hover {
+  background: #e88b1d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(204, 123, 25, 0.3);
+}
+
+.plex-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.error-details {
+  margin-top: 1.5rem;
+  font-family: monospace;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.2rem;
+  border-radius: 6px;
+  word-break: break-word;
+}
+
+/* Loading animation for auth-popup */
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .plex-button {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .error-details {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.2rem;
+    margin: 0.8rem;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .plex-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    align-items: flex-start;
+  }
+  .container {
+    margin-top: 2rem;
+  }
+}

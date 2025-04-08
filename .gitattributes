@@ -1,0 +1,45 @@
+# Auto detect text files and perform line-ending normalization
+* text=auto
+
+# Documentation
+*.md text diff=markdown linguist-detectable=true linguist-documentation=false
+*.mdx text diff=markdown linguist-detectable=true linguist-documentation=false
+*.txt text
+*.yml text
+*.yaml text
+
+# Python
+*.py text diff=python linguist-detectable=true
+requirements.txt text
+
+# Web files
+*.html text diff=html linguist-detectable=true
+*.css text diff=css linguist-detectable=true
+*.js text diff=javascript linguist-detectable=true
+*.json text
+
+# Git Config
+.gitattributes text
+.gitignore text
+.gitconfig text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.webp binary
+
+# Video
+*.webm binary
+*.mp4 binary
+
+# Enforce checkout with LF
+*.sh text eol=lf
+*.bash text eol=lf
+Makefile text eol=lf
+
+# Documentation overrides
+docs/** linguist-documentation=false
