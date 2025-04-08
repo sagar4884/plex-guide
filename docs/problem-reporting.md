@@ -1,7 +1,7 @@
 # <span style="color:orange">How to Report a Problem with a Movie or TV Show</span>
 If you encounter any problems with content (such as distorted video, incorrect media, double images, or misaligned subtitles), you have three ways to report it:
 Using Requesting Tool:
-1. Visit request.bladelight.tech
+1. Visit [request.bladelight.tech](https://request.bladelight.tech)
 2. Find the problematic Movie or TV Show
 3. Click the yellow exclamation point icon in the top right
 4. Enter the details of the issue
