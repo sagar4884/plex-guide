@@ -1,5 +1,5 @@
 site_name: Mahadev Guide # Replace with your site name
-site_url: https://wiki.bladelight.tech # Replace with your site URL
+site_url: https://help.bladelight.tech # Replace with your site URL
 theme:
   name: material
   logo: assets/images/mahadev.webp # Replace with your logo
