@@ -1,8 +1,8 @@
-site_name: your-site-name # Replace with your site name
-site_url: https://your-domain.com # Replace with your site URL
+site_name: Mahadev Guide # Replace with your site name
+site_url: https://wiki.bladelight.tech # Replace with your site URL
 theme:
   name: material
-  logo: assets/images/plex-logo.webp # Replace with your logo
+  logo: assets/images/mahadev.webp # Replace with your logo
   custom_dir: docs/overrides
   features:
     - navigation.instant
@@ -71,7 +71,7 @@ plugins:
       enable_creation_date: true
       type: timeago
   - git-committers:
-      repository: YourUsername/your-repo-name # Replace with your repo
+      repository: sagar4884/plex-guide # Replace with your repo
       branch: main # Or your default branch
       exclude_committers:
         - "web-flow"  # GitHub web UI edits
@@ -99,7 +99,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: Copyright &copy; 2025 Your Name # Replace with your name
+copyright: Copyright &copy; 2025 Bladelight # Replace with your name
 
 extra_css:
   - assets/css/extra.css
@@ -108,7 +108,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
+      link: https://github.com/sagar4884
       name: Your Name @ Github
     - icon: fontawesome/brands/discord
       link: https://your-discord-link
