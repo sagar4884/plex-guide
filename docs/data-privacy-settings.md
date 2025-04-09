@@ -1,18 +1,11 @@
 # <span style="color:orange">How to Disable Discover Together Sharing (and other data privacy suggestions):</span>
 Plex recently rolled out a recent Beta “Feature” the in short words, emails your Plex “Friends” a short list of things you watched last week. This is an Opt-OUT feature, meaning it's Enabled by default for all Plex users, new or old. Below are steps outlined how to Opt-OUT of this new feature along with some other Privacy settings everyone should be aware of scattered throughout many pages under the Plex Umbrella. These are mere suggestions, do your research and reading before making any changes on your own accounts.
 
-
 <span style="color:orange">Step 1:</span>
 
 Log into [app.plex.tv](https://app.plex.tv) through a web browser.
 
 <span style="color:orange">Step 2:</span>
-
-Step 1:
-
-Log into [app.plex.tv](https://app.plex.tv) through a web browser.
-
-Step 2:
 
 Select your profile photo in the top-right corner of the screen, then select "View Profile"
 
@@ -21,25 +14,17 @@ Select your profile photo in the top-right corner of the screen, then select "Vi
 
 <span style="color:orange">Step 3:</span>
 
-Step 3:
-
 Select "Edit Profile"
 
 ![image](https://mediaclients.wiki/discovery_opt-out/edit_profile-2023-11-29_17-44-12.png)
 
-
 <span style="color:orange">Step 4:</span>
-
-Step 4:
 
 Select "Manage who can see your activity"
 
 ![image](https://mediaclients.wiki/discovery_opt-out/privacy_settings-2023-11-29_17-21-46.png)
 
-
 <span style="color:orange">Step 5:</span>
-
-Step 5:
 
 Make sure all options are set to private. (Account Visibility defaults to "Anyone," with "Friends Only" currently being the most restrictive choice as of writing.)
 
@@ -55,23 +40,13 @@ Log into [Plex.tv](https://Plex.tv) through a web browser.
 
 Navigate to the following URL: [https://www.plex.tv/about/privacy-legal/privacy-preferences/#opd](https://www.plex.tv/about/privacy-legal/privacy-preferences/#opd)
 
-Step 1:
-
-Log into [Plex.tv](https://Plex.tv) through a web browser.
-
-Step 2:
-
-Navigate to the following URL: [https://www.plex.tv/about/privacy-legal/privacy-preferences/#opd](https://www.plex.tv/about/privacy-legal/privacy-preferences/#opd)
-
-Step 3:
+<span style="color:orange">Step 3:</span>
 
 Under "Optional Playback Data," you will find "Send playback data to Plex"
 
 ![image](https://mediaclients.wiki/discovery_opt-out/send_data2023-11-29_17-30-34.png)
 
 <span style="color:orange">Step 4:</span>
-
-Step 4:
 
 Uncheck "Send playback data to Plex"
 

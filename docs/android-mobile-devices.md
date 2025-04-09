@@ -24,7 +24,7 @@ Select the Show All menu option
 
 Then you will see the option we are looking for:
 
-Select Maximum
+  * Select Maximum
 
 ![image](https://mediaclients.wiki/client%20screen%20shots/android_mobile/android5.png)
 
