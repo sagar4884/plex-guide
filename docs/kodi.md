@@ -1,9 +1,9 @@
-# <span style="color:orange">KODI
+# <span style="color:orange">KODI</span>
 In order to change the Plex video quality settings on your Kodi device, simply find the settings menu hidden under your username as outlined below.
 
-![image](https://mediaclients.wiki/client%20screen%20shots/android_mobile/android0.png)
+![image](https://mediaclients.wiki/client%20screen%20shots/wm-kodisettingsmu.png)
 
-Settings > Video >
+<span style="color:orange">Settings > Video ></span>
 
 
   * Local Quality > Original
@@ -11,6 +11,6 @@ Settings > Video >
   * Online Quality > Original
   * Allow Direct Play > Check'd
   * Allow Direct Stream > Check'd
-  * Allow HEVC (h265) > Check'd</span>
+  * Allow HEVC (h265) > Check'd
 
-https://mediaclients.wiki/client%20screen%20shots/wm-kodiqualitymu.png
+![image](https://mediaclients.wiki/client%20screen%20shots/wm-kodiqualitymu.png)
