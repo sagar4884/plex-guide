@@ -1,7 +1,6 @@
 # <span style="color:orange">How to Disable Discover Together Sharing (and other data privacy suggestions):</span>
 Plex recently rolled out a recent Beta “Feature” the in short words, emails your Plex “Friends” a short list of things you watched last week. This is an Opt-OUT feature, meaning it's Enabled by default for all Plex users, new or old. Below are steps outlined how to Opt-OUT of this new feature along with some other Privacy settings everyone should be aware of scattered throughout many pages under the Plex Umbrella. These are mere suggestions, do your research and reading before making any changes on your own accounts.
 
-
 <span style="color:orange">Step 1:</span>
 
 Log into [app.plex.tv](https://app.plex.tv) through a web browser.
@@ -11,6 +10,7 @@ Log into [app.plex.tv](https://app.plex.tv) through a web browser.
 Select your profile photo in the top-right corner of the screen, then select "View Profile"
 
 ![image](https://mediaclients.wiki/discovery_opt-out/edit_profile-2023-11-29_17-15-12.png)
+
 
 <span style="color:orange">Step 3:</span>
 
