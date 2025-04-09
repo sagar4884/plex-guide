@@ -35,11 +35,12 @@ theme:
 nav:
   - Introduction: index.md
   - Rules and Guidelines: rules-and-guidelines.md
-  - Problem Reporting: problem-reporting.md
-  - What is Plex?: what-is-plex.md
-  - Is Plex safe to use?: plex-safety.md
   - How to Accept Invite and Setup Libraries?: invites-setup.md
-  - Data Privacy Settings: data-privacy-settings.md
+  - Plex:
+    - What is Plex?: what-is-plex.md
+    - Is Plex safe to use?: plex-safety.md
+    - Data Privacy Settings: data-privacy-settings.md
+  - Problem Reporting: problem-reporting.md
   - Streaming Quality Setup & Transcoding:
     - What it is?: what-it-is.md
     - Mobile Devices:
@@ -47,7 +48,6 @@ nav:
       - Apple iOS Devices: apple-ios-devices.md
     - Plex Clients:
       - Amazon FireTV Devices: amazon.md
-      - Android TV: android.md
       - AppleTV: appletv.md
       - KODI: kodi.md
       - LG/webOS: lg.md
@@ -56,6 +56,7 @@ nav:
       - Roku: roku.md
       - Windows/MAC app: windows-mac.md
       - XBox: xbox.md
+  - Requesting Content: request.md
   - FAQ:
     - What is transcoding?: faq/what-is-transcoding.md
     # - Why do I need to buy the Plex app on my phone?: faq/why-do-i-to-buy-plex-app.md
@@ -64,7 +65,7 @@ nav:
     - How do I add items to my Plex Universal Watchlist?: faq/adding-to-universal-watchlist.md
     - Responsible Content Requesting: faq/responsible-content-requests.md
     - I requested something an hour ago but it hasn't shown up yet. Why?: faq/missing-requests.md
-    - I'm having a problem with a Movie or TV Show: faq/content-issues.md
+    - I'm having a problem with a Movie or TV Show: problem-reporting.md
     - Content Quality and Language Options: faq/special-requests.md
     # - Missing Confirmation Emails: faq/missing-emails.md
     - Can I share your Plex server with someone else?: faq/can-i-share-your-plex.md

@@ -1,5 +1,5 @@
 # <span style="color:orange">How to Report a Problem with a Movie or TV Show</span>
-If you encounter any problems with content (such as distorted video, incorrect media, double images, or misaligned subtitles), you have three ways to report it:
+If you encounter any problems with content (such as distorted video, incorrect media, double images, or misaligned subtitles), you have two ways to report it:
 Using Requesting Tool:
 
 1. Visit [request.bladelight.tech](https://request.bladelight.tech)
@@ -17,3 +17,10 @@ This method it helps me track and resolve issues more effectively by creating a 
   * Helps me track problems I can't fix immediately<br>
   * Makes it easier to identify patterns in content issues<br>
   * Provides all the necessary details in one place
+
+<br>
+<br>
+<b><span style="color:orange">Direct Contact</span></b>
+
+  * You can always contact me directly about any issues
+  * This is perfectly fine and works too!
