@@ -35,11 +35,12 @@ theme:
 nav:
   - Introduction: index.md
   - Rules and Guidelines: rules-and-guidelines.md
-  - Problem Reporting: problem-reporting.md
-  - What is Plex?: what-is-plex.md
-  - Is Plex safe to use?: plex-safety.md
   - How to Accept Invite and Setup Libraries?: invites-setup.md
-  - Data Privacy Settings: data-privacy-settings.md
+  - Plex:
+    - What is Plex?: what-is-plex.md
+    - Is Plex safe to use?: plex-safety.md
+    - Data Privacy Settings: data-privacy-settings.md
+  - Problem Reporting: problem-reporting.md
   - Streaming Quality Setup & Transcoding:
     - What it is?: what-it-is.md
     - Mobile Devices:
@@ -47,7 +48,6 @@ nav:
       - Apple iOS Devices: apple-ios-devices.md
     - Plex Clients:
       - Amazon FireTV Devices: amazon.md
-      - Android TV: android.md
       - AppleTV: appletv.md
       - KODI: kodi.md
       - LG/webOS: lg.md
