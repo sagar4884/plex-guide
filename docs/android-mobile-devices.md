@@ -1,4 +1,5 @@
 # <span style="color:orange">Android Mobile Devices</span>
+
 Follow the steps below in order to change the Plex video quality settings on an Android Mobile device.  From the home screen hit the "hamburger menu" button in the upper left hand corner.
 
 ![image](https://mediaclients.wiki/client%20screen%20shots/android_mobile/android0.png)
@@ -27,4 +28,4 @@ Select Maximum
 
 ![image](https://mediaclients.wiki/client%20screen%20shots/android_mobile/android5.png)
 
-Hit the < in the upper left and you are ready to stream
+Hit the < in the upper left and you are ready to stream</span>
