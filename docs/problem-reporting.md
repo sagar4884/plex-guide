@@ -17,3 +17,7 @@ This method it helps me track and resolve issues more effectively by creating a 
   * Helps me track problems I can't fix immediately<br>
   * Makes it easier to identify patterns in content issues<br>
   * Provides all the necessary details in one place
+
+<div style="position:relative;height:0;width:100%;overflow:hidden;z-index:1;border-radius:6px;box-sizing:border-box;border:1px solid #e7e7e7;padding-bottom:calc(49.64843750% + 31px)">
+<iframe src="https://www.guidejar.com/guides/5ffd99b6-cbb3-484f-b032-5876b8033a97" width="100%" height="100%" style="position:absolute;inset:0" allowfullscreen frameborder="0"></iframe>
+</div>
