@@ -1,5 +1,5 @@
 # <span style="color:orange">Apple IOS Devices</span>
-<span style="color:orange">In order to change  the Plex video quality settings on Apple IOS devices (iphones, ipads & ipods).  From the home screen hit the "hamburger menu" button in the upper left hand corner.</span>
+In order to change  the Plex video quality settings on Apple IOS devices (iphones, ipads & ipods).  From the home screen hit the "hamburger menu" button in the upper left hand corner.
 
 ![image](https://mediaclients.wiki/client%20screen%20shots/ios/iphone.png)
 
