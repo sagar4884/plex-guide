@@ -1,9 +1,13 @@
-site_name: Mahadev Guide # Replace with your site name
-site_url: https://help.bladelight.tech # Replace with your site URL
+# Site Information
+site_name: Mahadev Guide # Replace with your site name if desired
+site_url: https://help.bladelight.tech # Ensure this is correct
+
+# Theme Configuration (Material for MkDocs)
 theme:
   name: material
-  logo: assets/images/mahadev.webp # Replace with your logo
-  custom_dir: docs/overrides
+  logo: assets/images/mahadev.webp # Make sure this path is correct
+  custom_dir: docs/overrides # If you have custom overrides
+  language: en
   features:
     - navigation.instant
     - navigation.instant.prefetch
@@ -11,118 +15,99 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.top
-    - toc.integrate
+    - toc.integrate # Automatically integrates Table of Contents
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: en
   palette:
-    - scheme: slate
+    # Palette toggle for light/dark modes
+    - scheme: slate # Dark mode
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-      primary: black
-      accent: custom
-    - scheme: default
+      primary: black # Or another dark primary color
+      accent: custom # Or another dark accent color
+    - scheme: default # Light mode
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: black
-      accent: custom
+      primary: black # Or another light primary color
+      accent: custom # Or another light accent color
 
+# Navigation Structure (Updated & Consolidated)
 nav:
   - Introduction: index.md
-  - Rules and Guidelines: rules-and-guidelines.md
-  - How to Accept Invite and Setup Libraries?: invites-setup.md
-  - Plex:
-    - What is Plex?: what-is-plex.md
-    - Is Plex safe to use?: plex-safety.md
-    - Data Privacy Settings: data-privacy-settings.md
-  - Problem Reporting: problem-reporting.md
-  - Streaming Quality Setup & Transcoding:
-    - What it is?: what-it-is.md
-    - Mobile Devices:
-      - Android Mobile Devices: android-mobile-devices.md
-      - Apple iOS Devices: apple-ios-devices.md
-    - Plex Clients:
-      - Amazon FireTV Devices: amazon.md
-      - AppleTV: appletv.md
-      - KODI: kodi.md
-      - LG/webOS: lg.md
-      - PlayStation: playstation.md
-      - Plex Web Player: plex-web-player.md
-      - Roku: roku.md
-      - Windows/MAC app: windows-mac.md
-      - XBox: xbox.md
-  - Requesting Content: request.md
-  - FAQ:
-    - What is transcoding?: faq/what-is-transcoding.md
-    # - Why do I need to buy the Plex app on my phone?: faq/why-do-i-to-buy-plex-app.md
-    - My video won't stop buffering: faq/wont-stop-buffering.md
-    - Help, I forgot my Plex password!: faq/forgot-password.md
-    - How do I add items to my Plex Universal Watchlist?: faq/adding-to-universal-watchlist.md
-    - Responsible Content Requesting: faq/responsible-content-requests.md
-    - I requested something an hour ago but it hasn't shown up yet. Why?: faq/missing-requests.md
-    - I'm having a problem with a Movie or TV Show: problem-reporting.md
-    - Content Quality and Language Options: faq/special-requests.md
-    # - Missing Confirmation Emails: faq/missing-emails.md
-    - Can I share your Plex server with someone else?: faq/can-i-share-your-plex.md
-    - What is Plex Pass?: faq/plex-pass.md
-    - Why Bitrate Matters: faq/why-bitrate-matters.md
-  - Useful Links: useful-links.md
-  - ↪ Logout: javascript:window.location.href='/auth/logout'
+  - Getting Started:
+      - Connecting to the Server: connecting.md
+      - Why Jellyfin?: why-jellyfin.md # Kept existing page
+  - Using the Server:
+      - Client Playback Settings: client-settings.md # Consolidated quality settings
+      - Requesting Content & Reporting Issues: requests-and-issues.md # Consolidated requests/issues
+      - Understanding Transcoding: transcoding-explained.md # New page
+  - Server Information:
+      - Rules & Guidelines: rules.md # Consolidated rules
+      - Privacy & Safety: privacy.md # Consolidated privacy/safety
+      - Useful Links: useful-links.md # Kept existing page
+  - ↪ Logout: javascript:window.location.href='/auth/logout' # Logout link
 
+# Plugins
 plugins:
-  - search
-  - mkdocs-video
-  - git-revision-date-localized:
+  - search # Built-in search
+  - mkdocs-video # For embedding videos
+  - git-revision-date-localized: # Shows last updated time
       enable_creation_date: true
       type: timeago
-  - git-committers:
-      repository: YourUsername/your-repo-name # Replace with your repo
-      branch: main # Or your default branch
+  - git-committers: # Optional: Shows page contributors
+      repository: YourUsername/your-repo-name # !!! ACTION REQUIRED: Replace with your GitHub username/repo !!!
+      branch: main # Or your default branch name
       exclude_committers:
-        - "web-flow"  # GitHub web UI edits
-        - "actions-user"  # GitHub Actions
-        - "github-actions[bot]"  # GitHub Actions bot
-      token: !ENV GITHUB_TOKEN
+        - "web-flow"
+        - "actions-user"
+        - "github-actions[bot]"
+      token: !ENV GITHUB_TOKEN # Requires GITHUB_TOKEN environment variable in Cloudflare Pages
 
+# Markdown Extensions
 markdown_extensions:
   - toc:
-      toc_depth: 1
-  - pymdownx.blocks.caption
-  - pymdownx.highlight:
+      permalink: true # Adds anchor links to headings
+      toc_depth: 3 # Adjust depth as needed (e.g., 2 or 3)
+  - pymdownx.blocks.caption # Allows captions for code blocks, etc.
+  - pymdownx.highlight: # Code highlighting
       anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
+  - pymdownx.inlinehilite # Inline code highlighting
+  - pymdownx.snippets # Allows including snippets from other files
+  - admonition # Adds colored message boxes like !!! note
+  - pymdownx.arithmatex: # Math formulas (if needed)
       generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
-  - pymdownx.emoji:
+  - footnotes # Adds footnote support
+  - pymdownx.details # Collapsible details blocks
+  - pymdownx.superfences # Enhanced fenced code blocks
+  - pymdownx.mark # ==Highlighting== text
+  - attr_list # Adds ability to add attributes (like classes/IDs) to elements
+  - md_in_html # Allows processing Markdown inside HTML blocks
+  - pymdownx.emoji: # Emoji support
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: Copyright &copy; 2025 Your Name # Replace with your name
+# Copyright Notice
+copyright: Copyright &copy; 2025 Your Name # !!! ACTION REQUIRED: Replace "Your Name" !!!
 
+# Additional CSS / JavaScript (Optional)
 extra_css:
-  - assets/css/extra.css
+  - assets/css/extra.css # Path to your custom CSS
 
-# Update/Remove all of your socials
+# Extra variables or configurations (e.g., Social Links)
 extra:
-  social:
+  social: # !!! ACTION REQUIRED: Update or remove these social links !!!
     - icon: fontawesome/brands/github
-      link: https://github.com/sagar4884
-      name: sagar4884 @ Github
+      link: https://github.com/sagar4884 # Replace with your GitHub link
+      name: sagar4884 @ Github # Replace with your name/handle
 #    - icon: fontawesome/brands/discord
 #      link: https://your-discord-link
 #      name: Discord Channel
 #    - icon: fontawesome/solid/globe
 #      link: https://your-website.com
 #      name: Personal Website
+
