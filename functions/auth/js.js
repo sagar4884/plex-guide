@@ -1,10 +1,6 @@
 export async function onRequest({ env }) {
     // This function serves the combined JavaScript for the login page
     // It injects necessary environment variables like PLEX_CLIENT_ID if needed by the frontend JS.
-    // Currently, only PLEX_CLIENT_ID is injected for the Plex part.
-
-    // Note: We are not injecting JELLYFIN_URL or other Jellyfin secrets here,
-    // as the frontend only needs to send credentials to our *own* backend function.
     const PLEX_CLIENT_ID_VALUE = env.PLEX_CLIENT_ID || "YOUR_PLEX_CLIENT_ID_MISSING"; // Fallback just in case
 
     const js = `
@@ -69,7 +65,7 @@ export async function onRequest({ env }) {
             if (popup.closed) {
               clearInterval(checkInterval);
               // Reload the main page to check auth status via middleware/[[route]]
-              window.location.reload();
+              window.location.reload(); // Plex flow uses reload after popup closes
             }
           }, 1000);
 
@@ -120,9 +116,10 @@ export async function onRequest({ env }) {
           });
 
           if (response.ok) {
-            // Success! Backend presumably set the cookie. Reload to access content.
-            if (loginStatusDiv) loginStatusDiv.textContent = 'Login successful! Reloading...';
-            window.location.reload();
+            // Success! Backend set the cookie. Redirect to homepage.
+            if (loginStatusDiv) loginStatusDiv.textContent = 'Login successful! Redirecting...';
+            // ** CHANGED LINE BELOW **
+            window.location.href = '/'; // Redirect to root/homepage
           } else {
             // Handle login failure (e.g., wrong credentials, server error)
             let errorMessage = 'Login failed. Please check your username and password.';
