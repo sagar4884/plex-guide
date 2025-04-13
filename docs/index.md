@@ -1,4 +1,4 @@
-OK, here's the MkDocs code to add a countdown timer to your site, counting down to July 1st, 2025, for the Plex decommissioning.Action Needed:Please replace the content of your index.md file with the following:---
+---
 title: Preamble
 ---
 
@@ -25,12 +25,23 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("plex-countdown").innerHTML = "Plex Decommissioned in: " + days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // Check if the element exists before trying to update it
+  var countdownElement = document.getElementById("plex-countdown");
+  if (countdownElement) {
+      countdownElement.innerHTML = "Plex Decommissioned in: " + days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("plex-countdown").innerHTML = "Plex Decommissioned";
+      if (distance < 0) {
+        clearInterval(x);
+        countdownElement.innerHTML = "Plex Decommissioned";
+      }
+  } else {
+      // If element doesn't exist, stop the interval
+      clearInterval(x);
   }
 }, 1000);
 </script>
+
+<br>
+Wondering why we're moving away from Plex? Read about [the advantages of Jellyfin vs. Plex](why-jellyfin.md).
+
