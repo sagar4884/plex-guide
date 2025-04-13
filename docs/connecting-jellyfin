@@ -1,0 +1,22 @@
+# Connecting Your App to the Jellyfin Server
+
+Unlike Plex, Jellyfin doesn't use an invite system tied to a central account. To connect any Jellyfin app (on your phone, TV, computer, etc.) to the server, you simply need to tell the app the server's address.
+
+**Server Address:** `https://jellyfin.bladelight.tech`
+
+**General Steps (May vary slightly by app):**
+
+1.  **Install a Jellyfin Client App:** Download the official Jellyfin app appropriate for your device (e.g., from the Google Play Store, Apple App Store, Amazon Appstore, or the Jellyfin website for desktop apps).
+2.  **Open the App:** Launch the Jellyfin app for the first time.
+3.  **Add Server / Connect:** Look for an option like "Add Server," "Connect to Server," or similar prompts.
+4.  **Enter Server Address:** When asked for the server address or URL, carefully type in:
+    ```
+    [https://jellyfin.bladelight.tech](https://jellyfin.bladelight.tech)
+    ```
+    * Ensure you include `https://`.
+    * Do *not* add anything after `.tech`.
+5.  **Connect / Continue:** Proceed with the connection. The app should find the server.
+6.  **Login:** You will then be prompted to enter your **Jellyfin Username** and **Password** (the same ones you use to log into this guide website).
+7.  **Done!** Once logged in, you should see the server's libraries.
+
+If you have trouble connecting, double-check the server address for typos and ensure your device has an active internet connection.
