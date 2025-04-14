@@ -45,7 +45,7 @@ body {
   /* Apply dark overlay for better text readability over image */
   background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Increased overlay opacity */
                     url('https://i.imgur.com/3rjfP8x.png');
-  background-size: contain; /* MODIFIED: Changed from 'cover' to 'contain' */
+  background-size: contain; /* Changed from 'cover' to 'contain' */
   background-position: center center;
   background-attachment: fixed; /* Keep image fixed during scroll */
   background-repeat: no-repeat;
@@ -110,3 +110,26 @@ body {
 }
 
 /* Add more custom styles below as needed */
+
+
+/* --- Custom Heading Colors --- */
+
+/* Light Mode Headings: Pure Black */
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2,
+[data-md-color-scheme="default"] .md-typeset h3,
+[data-md-color-scheme="default"] .md-typeset h4,
+[data-md-color-scheme="default"] .md-typeset h5,
+[data-md-color-scheme="default"] .md-typeset h6 {
+  color: #000000;
+}
+
+/* Dark Mode Headings: Pure White */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #ffffff;
+}
