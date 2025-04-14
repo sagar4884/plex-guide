@@ -45,7 +45,7 @@ body {
   /* Apply dark overlay for better text readability over image */
   background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Increased overlay opacity */
                     url('https://i.imgur.com/3rjfP8x.png');
-  background-size: cover;
+  background-size: contain; /* MODIFIED: Changed from 'cover' to 'contain' */
   background-position: center center;
   background-attachment: fixed; /* Keep image fixed during scroll */
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@ body {
 .md-sidebar--primary {
   /* Use RGBA to make the default background semi-transparent */
   /* Dark Mode */
-  background-color: rgba(18, 18, 18, 0.6); /* MODIFIED: Alpha changed from 0.75 to 0.6 */
+  background-color: rgba(18, 18, 18, 0.6); /* Alpha changed from 0.75 to 0.6 */
   backdrop-filter: blur(5px); /* Optional: Add blur effect */
   -webkit-backdrop-filter: blur(5px); /* Safari */
   border-right: 1px solid rgba(255, 255, 255, 0.07); /* Subtle border */
@@ -70,7 +70,7 @@ body {
 
 [data-md-color-scheme="default"] .md-sidebar--primary {
   /* Light Mode */
-  background-color: rgba(255, 255, 255, 0.6); /* MODIFIED: Alpha changed from 0.75 to 0.6 */
+  background-color: rgba(255, 255, 255, 0.6); /* Alpha changed from 0.75 to 0.6 */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-right: 1px solid rgba(0, 0, 0, 0.07); /* Subtle border */
