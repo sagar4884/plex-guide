@@ -20,7 +20,7 @@ The two platforms handle your usage data differently:
 
 * **Privacy Focused:** Jellyfin is open-source software designed with user privacy as a priority.
 * **No Telemetry (Default):** Jellyfin **does not collect or report your viewing habits**, library contents, or personal usage data back to any central company.
-* **Your Data Stays Here:** All interaction data (watch history, settings) stays between your client app and this server instance (`jellyfin.bladelight.tech`).
+* **Your Data Stays Here:** All interaction data (watch history, settings) stays between your client app and this specific server instance (`jellyfin.bladelight.tech`).
 * **No External Account Required:** Jellyfin doesn't require linking to a mandatory external account for basic operation. Authentication happens directly with this server.
 
 ### Plex (*Mahadev*)
