@@ -40,21 +40,28 @@
   --md-admonition-bg-color: var(--md-surface-bg-color-light);
 }
 
-/* --- Background Image (Fixed) --- */
-body {
-  /* Apply dark overlay for better text readability over image */
-  background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Increased overlay opacity */
-                    url('https://i.imgur.com/3rjfP8x.png');
-  background-size: contain; /* Changed from 'cover' to 'contain' */
+/* --- Background Image (Fixed) - *** DIAGNOSTIC TEST *** --- */
+
+/* Light Mode Background TEST: LIME */
+[data-md-color-scheme="default"] body {
+   /* background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('https://i.imgur.com/3rjfP8x.png'); */
+   background-color: lime !important; /* TEST LINE */
+   background-size: contain;
+   background-position: center center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+}
+
+/* Dark Mode Background TEST: RED */
+[data-md-color-scheme="slate"] body {
+  /* background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), url('https://i.imgur.com/3rjfP8x.png'); */
+  background-color: red !important; /* TEST LINE */
+  background-size: contain;
   background-position: center center;
-  background-attachment: fixed; /* Keep image fixed during scroll */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
-}
-/* Apply light overlay for light mode */
-[data-md-color-scheme="default"] body {
-   background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Increased overlay opacity */
-                     url('https://i.imgur.com/3rjfP8x.png');
 }
 
 
@@ -121,7 +128,7 @@ body {
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #000000;
+  color: #000000 !important; /* Added !important */
 }
 
 /* Dark Mode Headings: Pure White */
@@ -131,5 +138,5 @@ body {
 [data-md-color-scheme="slate"] .md-typeset h4,
 [data-md-color-scheme="slate"] .md-typeset h5,
 [data-md-color-scheme="slate"] .md-typeset h6 {
-  color: #ffffff;
+  color: #ffffff !important; /* Added !important */
 }
