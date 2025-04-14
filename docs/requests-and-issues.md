@@ -61,7 +61,7 @@ This helps track issues effectively.
 If the request tool isn't suitable, or for other questions (like password resets or connection problems), you can always contact me (the server admin) directly:
 
 * **Email:** `bladelight.tech@gmail.com`
-* **Mobile:** Signal, WhatsApp, or SMS/iMessage *(You should already have my number)*
+* **Mobile:** Signal, WhatsApp, or SMS/iMessage *(You should already have my number for these methods)*
 
 Please provide the full name of the Movie/Show and a clear description of the problem if reporting an issue directly.
 
@@ -71,9 +71,9 @@ Please provide the full name of the Movie/Show and a clear description of the pr
 
 *(Note: Please verify these links point to the correct pages in your final site structure once FAQs are created)*
 
-* `faq/responsible-content-requests.md` - Understanding best practices when requesting.
-* `faq/missing-requests.md` - Release dates and availability.
-* `faq/special-requests.md` - Media quality defaults, language tracks, etc.
-* `faq/i-dont-want-to-use-overseerr.md` - Why use a request system?
+* `faq.md#responsible-requests` - Understanding best practices when requesting. *(Example anchor link - update when FAQ exists)*
+* `faq.md#missing-requests` - Release dates and availability. *(Example anchor link)*
+* `faq.md#special-requests` - Media quality defaults, language tracks, etc. *(Example anchor link)*
+* `faq.md#why-request-tool` - Why use a request system? *(Example anchor link)*
 
 Thank you for helping keep the library organized and functional!
