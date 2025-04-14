@@ -1,33 +1,30 @@
-# Jellyfin vs. Plex: Key Advantages of Jellyfin
+# Why Jellyfin? Advantages for Your Viewing Experience
 
-When choosing a media server, both Jellyfin and Plex offer robust solutions, but they differ significantly in philosophy and features. If you're considering Jellyfin, here are some of its key advantages compared to Plex:
+You might notice we're encouraging the use of Jellyfin (*Parvati*) alongside, and eventually replacing, Plex (*Mahadev*). While both let you watch the media library, Jellyfin offers several key advantages *for you* as a user connecting to this server:
 
-## 1. Completely Free and Open Source (FOSS)
+## 1. Better Performance Potential (Free Hardware Transcoding)
 
-* **No Costs, Ever:** Jellyfin is 100% free. There are no premium tiers, subscriptions (like Plex Pass), or features hidden behind a paywall. Everything is included out of the box.
-* **Transparency:** Being open-source means the code is publicly available for anyone to inspect, audit, modify, and contribute to. This fosters trust and community involvement.
-* **Community Driven:** Development is driven by the community, focusing on features desired by its users rather than corporate priorities.
+* **Smoother Streams:** Jellyfin allows the server to use its powerful GPU (RTX 2080 Super) for video transcoding *without* requiring an extra subscription (like Plex Pass).
+* **Why This Matters To You:** When a file needs to be converted for your device (transcoded), using the GPU is much faster and more efficient than using the CPU alone. This means potentially less buffering, faster start times, and a smoother experience, especially with high-quality files or when many people are streaming simultaneously.
 
 ## 2. Enhanced Privacy
 
-* **No Telemetry:** Jellyfin does not collect usage data or metrics from your server by default. Your viewing habits and library information remain private on your server.
-* **No Central Servers Required:** Core functionality does not rely on external servers controlled by the Jellyfin project (unlike Plex, which requires authentication via Plex.tv). Your server can run entirely independently on your local network if desired.
+* **No Usage Tracking (by Jellyfin):** Jellyfin is designed with privacy first. The core software doesn't collect or send your viewing habits or personal data back to a central company. What you watch stays between you and this server.
+* **Less Corporate Ecosystem:** Jellyfin focuses purely on serving the media hosted here. Unlike Plex, it doesn't require a mandatory external account (`plex.tv`) for basic login and doesn't integrate third-party ads or streaming services into the interface you see.
 
-## 3. Full Access to Features (Including Hardware Transcoding)
+## 3. Potentially More Reliable Access
 
-* **Hardware Transcoding for Free:** Jellyfin allows all users to leverage hardware acceleration (like Intel Quick Sync Video or NVIDIA NVENC on your RTX 2080 Super) for transcoding without any extra cost. Plex requires a paid Plex Pass subscription for this feature.
-* **No Feature Gating:** All server features, administrative controls, and playback capabilities are available to every user without restriction.
+* **Less Reliance on External Servers:** Jellyfin authenticates you directly against this server (`jellyfin.bladelight.tech`). This means if external services (like `plex.tv`) were having issues, your Jellyfin access should generally remain unaffected (as long as the server itself and your internet are up).
+* **Works Offline (Locally):** If your *home* internet goes down but the server is still running on your local network, you could potentially still access Jellyfin from devices within your home network (this depends on your specific home network setup).
 
-## 4. Greater Customization and Control
+## 4. Cleaner, Focused Interface
 
-* **More Flexibility:** The open-source nature allows for deeper customization, including theming via custom CSS and a wider range of community-developed plugins for various functionalities.
-* **Full Control Over Updates:** You decide when and if to update your server software. You are not forced into updates that might change features or UI elements unexpectedly.
-* **Direct File Access Focus:** Jellyfin primarily focuses on serving *your* media library directly, without integrating third-party ad-supported streaming services into the interface.
+* **Your Media First:** Jellyfin's interface is generally focused solely on the libraries shared from this server (Movies, TV Shows, etc.). It doesn't mix in external, ad-supported content or other services by default, leading to a potentially less cluttered experience.
 
-## 5. Offline Authentication
+## 5. Full Access to Features
 
-* **Local Logins:** User authentication happens directly against your server. You can log in and use Jellyfin even if your internet connection is down or if external authentication services were unavailable (provided you are on the same local network).
+* **No Paywalled Features:** All playback features available through Jellyfin are accessible to you without needing any kind of premium subscription on the server side.
 
 ---
 
-While Plex has its own strengths, particularly in client app availability and potentially a more polished out-of-the-box UI for some users, Jellyfin's commitment to being free, open-source, and privacy-respecting offers compelling advantages for users who value control and transparency.
+While Plex has been reliable, Jellyfin's open-source, privacy-respecting nature, and its ability to fully utilize the server's hardware for potentially smoother playback offer compelling benefits for your viewing experience as we move forward. Give the Jellyfin apps a try!
