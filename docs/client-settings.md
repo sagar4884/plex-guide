@@ -61,8 +61,8 @@ Instructions for apps running on smart TVs or dedicated streaming devices.
 2.  **Settings:** Find **Settings** (Gear icon ⚙️, often via sidebar or user profile).
 3.  **Playback:** Choose **Playback**.
 4.  **Video Quality:**
-    * **Remote Quality:** Set to **Maximum** or highest bitrate.
-    * **Local Quality:** Set to **Maximum** or highest bitrate.
+    * **Remote Quality:** Set to **Maximum** or the highest bitrate.
+    * **Local Quality:** Set to **Maximum** or the highest bitrate.
 5.  **Exit Settings.**
 
 #### Plex Settings (Apple TV)
@@ -86,8 +86,8 @@ Instructions for apps running on smart TVs or dedicated streaming devices.
 2.  **Settings:** Go to your **User Profile icon** and select **Settings** (Gear icon ⚙️).
 3.  **Playback:** Choose **Playback**.
 4.  **Video Quality:**
-    * **Internet Quality / Remote Quality:** Set to **Maximum** or highest option.
-    * **Home Network Quality / Local Quality:** Set to **Maximum** or highest option.
+    * **Internet Quality / Remote Quality:** Set to the **highest available option** ("Maximum", "Original", or highest Mbps).
+    * **Home Network Quality / Local Quality:** Set to the **highest available option**.
 5.  **Direct Play/Stream:** Ensure "Allow Direct Stream" is enabled. "Direct Play" set to Auto is usually fine.
 6.  **Exit Settings.**
 
@@ -168,7 +168,7 @@ Instructions for phones and tablets.
 #### Jellyfin / Swiftfin Settings (iOS Mobile)
 
 1.  **Open App:** Launch Jellyfin or Swiftfin.
-2.  **Settings:** Tap **Settings** tab/icon (Gear icon ⚙️, sometimes under "More").
+2.  **Settings:** Tap the **Settings** tab/icon (Gear icon ⚙️, sometimes under "More").
 3.  **Playback:** Tap **Playback**.
 4.  **Video Quality:**
     * **Remote Quality:** Set to **Maximum** or highest bitrate.
