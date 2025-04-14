@@ -40,7 +40,7 @@ Here's a brief overview of the different media libraries available on the *Parva
 * **Audio Books:** Contains narrated book recordings for listening enjoyment, typically organized by author or title. Use a compatible Jellyfin music client (like Finamp on mobile) or the web player for the best experience.
 * **Movies:** Your primary collection of feature-length films, mostly Western/English-language releases across different genres (action, comedy, drama, horror, thriller, etc.).
 * **Indian Shows:** Dedicated library for television series and shows produced in India, covering various regional languages and popular genres.
-* **Indian Movies:** Features feature-length films originating from India (Bollywood, Tollywood, Kollywood, etc.), encompassing diverse languages and cinematic styles.
+* **Indian Movies:** Features feature-length films originating from India (Bollywood, Tollywood, Kollywood etc.), encompassing diverse languages and cinematic styles.
 * **Foreign Movies:** Contains non-English language feature films from around the world (excluding Indian cinema, which has its own libraries). Subtitles are generally available and recommended.
 * **Documentary:** Feature-length non-fiction films exploring real-world topics, events, nature, history, science, biographies, or people.
 * **Documentary Shows:** Episodic non-fiction television series covering various subjects, similar to the Documentary movie library but in a multi-part series format.
