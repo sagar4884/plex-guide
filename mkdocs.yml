@@ -1,11 +1,12 @@
 # Site Information
-site_name: Mahadev Guide # Replace with your site name if desired
+site_name: Mahadev Guide # Or update as desired
 site_url: https://help.bladelight.tech # Ensure this is correct
 
 # Theme Configuration (Material for MkDocs)
 theme:
   name: material
-  logo: assets/images/mahadev.webp # Make sure this path is correct
+  logo: assets/images/mahadev.webp # Path relative to docs directory
+  favicon: assets/images/mahadev.ico # Path relative to docs directory
   custom_dir: docs/overrides # If you have custom overrides
   language: en
   features:
@@ -15,7 +16,7 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.top
-    - toc.integrate # Automatically integrates Table of Contents
+    - toc.integrate # Integrates TOC in sidebar
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -27,67 +28,68 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-      primary: black # Or another dark primary color
-      accent: custom # Or another dark accent color
+      primary: black
+      accent: custom # Set in extra.css
     - scheme: default # Light mode
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: black # Or another light primary color
-      accent: custom # Or another light accent color
+      primary: black
+      accent: custom # Set in extra.css
 
-# Navigation Structure (Updated & Consolidated)
+# Navigation Structure (Final Consolidated)
 nav:
   - Introduction: index.md
   - Getting Started:
       - Connecting to the Server: connecting.md
-      - Why Jellyfin?: why-jellyfin.md # Kept existing page
+      - Basic Navigation & Libraries: basic-navigation.md # New page
+      - Why Jellyfin?: why-jellyfin.md
   - Using the Server:
-      - Client Playback Settings: client-settings.md # Consolidated quality settings
-      - Requesting Content & Reporting Issues: requests-and-issues.md # Consolidated requests/issues
-      - Understanding Transcoding: transcoding-explained.md # New page
+      - Client Playback Settings: client-settings.md
+      - Selecting Audio & Subtitles: audio-subtitle-selection.md # New page
+      - Offline Viewing (Downloads): offline-viewing.md # New page
+      - Requesting Content & Reporting Issues: requests-and-issues.md
+      - Understanding Transcoding: transcoding-explained.md
   - Server Information:
-      - Rules & Guidelines: rules.md # Consolidated rules
-      - Privacy & Safety: privacy.md # Consolidated privacy/safety
-      - Useful Links: useful-links.md # Kept existing page
-  - ↪ Logout: javascript:window.location.href='/auth/logout' # Logout link
+      - Rules & Guidelines: rules.md
+      - Privacy & Safety: privacy.md
+      - FAQ: faq.md # New placeholder page
+      - Useful Links: useful-links.md
+  - ↪ Logout: javascript:window.location.href='/auth/logout'
 
 # Plugins
 plugins:
-  - search # Built-in search
-  - mkdocs-video # For embedding videos
-  - git-revision-date-localized: # Shows last updated time
+  - search
+  - mkdocs-video
+  - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
-  - git-committers: # Optional: Shows page contributors
-      repository: YourUsername/your-repo-name # !!! ACTION REQUIRED: Replace with your GitHub username/repo !!!
-      branch: main # Or your default branch name
+  - git-committers:
+      repository: YourUsername/your-repo-name # !!! ACTION REQUIRED: Replace !!!
+      branch: main
       exclude_committers:
         - "web-flow"
         - "actions-user"
         - "github-actions[bot]"
-      token: !ENV GITHUB_TOKEN # Requires GITHUB_TOKEN environment variable in Cloudflare Pages
+      token: !ENV GITHUB_TOKEN # Requires GITHUB_TOKEN environment variable
 
 # Markdown Extensions
 markdown_extensions:
   - toc:
       permalink: true # Adds anchor links to headings
-      toc_depth: 3 # Adjust depth as needed (e.g., 2 or 3)
-  - pymdownx.blocks.caption # Allows captions for code blocks, etc.
-  - pymdownx.highlight: # Code highlighting
+      toc_depth: 3 # Generate TOC up to H3 level
+  - pymdownx.blocks.caption
+  - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite # Inline code highlighting
-  - pymdownx.snippets # Allows including snippets from other files
-  - admonition # Adds colored message boxes like !!! note
-  - pymdownx.arithmatex: # Math formulas (if needed)
-      generic: true
-  - footnotes # Adds footnote support
-  - pymdownx.details # Collapsible details blocks
-  - pymdownx.superfences # Enhanced fenced code blocks
-  - pymdownx.mark # ==Highlighting== text
-  - attr_list # Adds ability to add attributes (like classes/IDs) to elements
-  - md_in_html # Allows processing Markdown inside HTML blocks
-  - pymdownx.emoji: # Emoji support
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details # For collapsible sections
+  - pymdownx.superfences
+  - pymdownx.mark # For ==highlighting==
+  - attr_list # For adding HTML attributes like classes/IDs
+  - md_in_html # Process Markdown inside HTML blocks
+  - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
@@ -102,12 +104,11 @@ extra_css:
 extra:
   social: # !!! ACTION REQUIRED: Update or remove these social links !!!
     - icon: fontawesome/brands/github
-      link: https://github.com/sagar4884 # Replace with your GitHub link
-      name: sagar4884 @ Github # Replace with your name/handle
+      link: https://github.com/sagar4884 # Replace
+      name: sagar4884 @ Github # Replace
 #    - icon: fontawesome/brands/discord
 #      link: https://your-discord-link
 #      name: Discord Channel
 #    - icon: fontawesome/solid/globe
 #      link: https://your-website.com
 #      name: Personal Website
-
