@@ -32,19 +32,19 @@ Welcome! Once you're connected to the Jellyfin (*Parvati*) server (see [Connecti
 
 Here's a brief overview of the different media libraries available on the *Parvati* server:
 
-* **Anime:** Features Japanese animated series and movies, covering a wide range of genres and styles from classics to recent releases.
-* **R Anime:** Contains mature-rated (R or 18+) anime series and movies. This library is intended for adult audiences due to potentially explicit content (violence, themes, language, etc.). Viewer discretion is advised.
-* **TV Shows:** Your main library for episodic television series, primarily Western/English-language shows across various genres (comedy, drama, sci-fi, reality, etc.).
-* **Asian Shows:** Features television dramas and series originating from various Asian countries (e.g., Korea, China, Japan, Thailand), excluding anime. Includes K-Dramas, C-Dramas, J-Dramas, and more.
-* **Shorts:** A collection of short films (live-action or animated), standalone specials, or brief video clips that don't fit into standard movie or TV categories.
-* **Audio Books:** Contains narrated book recordings for listening enjoyment, typically organized by author or title. Use a compatible Jellyfin music client (like Finamp on mobile) or the web player for the best experience.
-* **Movies:** Your primary collection of feature-length films, mostly Western/English-language releases across different genres (action, comedy, drama, horror, thriller, etc.).
-* **Indian Shows:** Dedicated library for television series and shows produced in India, covering various regional languages and popular genres.
-* **Indian Movies:** Features feature-length films originating from India (Bollywood, Tollywood, Kollywood etc.), encompassing diverse languages and cinematic styles.
-* **Foreign Movies:** Contains non-English language feature films from around the world (excluding Indian cinema, which has its own libraries). Subtitles are generally available and recommended.
-* **Documentary:** Feature-length non-fiction films exploring real-world topics, events, nature, history, science, biographies, or people.
-* **Documentary Shows:** Episodic non-fiction television series covering various subjects, similar to the Documentary movie library but in a multi-part series format.
-* **Live Channels:** *(Requires compatible client)* Access live broadcast television channels available through the server's configured tuner or IPTV source. Channel availability may vary.
-* **Collections:** Contains curated groups of movies or shows linked by a theme, franchise, actor, or director (e.g., "Marvel Cinematic Universe", "James Bond Collection", "Studio Ghibli Films"). These help organize related content scattered across other libraries and provide easy access to series or themed movie sets.
+* **Anime:** Contains animated shows, primarily Japanese anime but also including Western cartoons, Chinese donghua, and similar animated series covering a wide range of genres. [cite: 349]
+* **R Anime:** Contains animated shows intended for adult audiences due to mature themes, violence, or language. Includes Japanese anime, Western cartoons, Chinese donghua, etc., that are rated R/18+. Viewer discretion is strongly advised. [cite: 350, 351]
+* **TV Shows:** Your main library for episodic television series, primarily Western/English-language shows across various genres (comedy, drama, sci-fi, reality, etc.). [cite: 352]
+* **Asian Shows:** Features television dramas and series originating from various Asian countries (e.g., Korea, China, Japan, Thailand), excluding anime. Includes K-Dramas, C-Dramas, J-Dramas, and more. [cite: 353]
+* **Shorts:** A collection of short films (live-action or animated), standalone specials, or brief video clips that don't fit into standard movie or TV categories. [cite: 354]
+* **Audio Books:** Contains narrated book recordings for listening enjoyment, typically organized by author or title. Use a compatible Jellyfin music client (like Finamp on mobile) or the web player for the best experience. [cite: 355, 356]
+* **Movies:** Your primary collection of feature-length films, mostly Western/English-language releases across different genres (action, comedy, drama, horror, thriller, etc.). [cite: 357]
+* **Indian Shows:** Dedicated library for television series and shows produced in India, covering various regional languages and popular genres. [cite: 358]
+* **Indian Movies:** Features feature-length films originating from India (Bollywood, Tollywood, Kollywood etc.), encompassing diverse languages and cinematic styles. [cite: 359]
+* **Foreign Movies:** Contains non-English language feature films from around the world (excluding Indian cinema, which has its own libraries). Subtitles are generally available and recommended. [cite: 360, 361]
+* **Documentary:** Feature-length non-fiction films exploring real-world topics, events, nature, history, science, biographies, or people. [cite: 361]
+* **Documentary Shows:** Episodic non-fiction television series covering various subjects, similar to the Documentary movie library but in a multi-part series format. [cite: 362]
+* **Live Channels:** *(Requires compatible client)* Access live broadcast television channels available through the server's configured tuner or IPTV source. Channel availability may vary. [cite: 363]
+* **Collections:** Contains curated groups of movies or shows linked by a theme, franchise, actor, or director (e.g., "Marvel Cinematic Universe", "James Bond Collection", "Studio Ghibli Films"). These help organize related content scattered across other libraries and provide easy access to series or themed movie sets. [cite: 364, 365]
 
-Explore the libraries and use the search function to find what you're looking for! Don't forget to check out the [Client Playback Settings](client-settings.md) to optimize your viewing.
+Explore the libraries and use the search function to find what you're looking for! [cite: 366] Don't forget to check out the [Client Playback Settings](client-settings.md) to optimize your viewing. [cite: 367]
