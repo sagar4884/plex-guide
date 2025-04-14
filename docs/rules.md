@@ -7,7 +7,7 @@ Please follow these simple rules closely to ensure a positive experience for eve
 Sharing your account credentials (username/password) with others is **strictly prohibited**. Please also maintain discretion about this server's existence and your access to it.
 
 * **Why?**
-    * Server resources (like transcoding power provided by the  CPU & GPU, plus network bandwidth) are shared among active users. Adding unauthorized users via shared accounts can significantly slow down streaming performance and cause buffering for everyone.
+    * Server resources (like transcoding power provided by the Threadripper CPU and RTX 2080 Super GPU, plus network bandwidth) are shared among active users. Adding unauthorized users via shared accounts can significantly slow down streaming performance and cause buffering for everyone.
     * Maintaining privacy and discretion helps ensure the long-term availability of this service.
 
 * **Consequences for Account Sharing:**
