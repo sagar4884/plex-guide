@@ -4,82 +4,91 @@
  */
 
 :root {
-  /* --- Base Theme Colors (Adjust if needed) --- */
-  --theme-bg-dark: #121212;     /* Main dark background */
-  --theme-bg-surface: #1e1e1e;  /* Slightly lighter surface for dark mode */
-  --theme-text-light: #e0e0e0;  /* Primary text on dark */
-  --theme-text-muted: #9e9e9e;  /* Muted text on dark */
-  --theme-border-color: #333333; /* Borders in dark mode */
+  /* --- Base Theme Colors (Reference) --- */
+  --md-default-bg-color-dark: #121212;    /* Main dark background */
+  --md-default-bg-color-light: #ffffff; /* Main light background */
+  --md-surface-bg-color-dark: #1e1e1e;   /* Surface dark background */
+  --md-surface-bg-color-light: #fafafa;  /* Surface light background */
 
   /* --- Mahadev/Parvati Accent Colors --- */
-  /* Primary Accent (Blue Grey) */
   --mahadev-blue-grey: #546E7A; /* Material Blue Grey 600 */
-  /* Secondary Accent (Purple) */
   --mahadev-purple-accent: #673AB7; /* Material Deep Purple 500 */
 
   /* --- Applying Accents to MkDocs Material Variables --- */
   --md-accent-fg-color: var(--mahadev-blue-grey);
-  /* Use transparent version for ripples/focus */
   --md-accent-fg-color--transparent: hsla(200, 14%, 40%, 0.1);
-  /* Background usually stays default, accent is for foreground */
-  --md-accent-bg-color: #FFF; /* Default light bg */
+  /* Accent background usually matches default background */
+  --md-accent-bg-color: var(--md-default-bg-color-light);
 }
 
 /* Apply dark theme specific overrides */
 [data-md-color-scheme="slate"] {
-  --md-accent-bg-color: var(--theme-bg-dark); /* Dark bg */
-  --md-default-fg-color: var(--theme-text-light);
-  --md-default-fg-color--light: var(--theme-text-medium);
-  --md-default-fg-color--lighter: var(--theme-text-muted);
-  --md-default-bg-color: var(--theme-bg-dark);
-  --md-code-bg-color: var(--theme-bg-surface);
-  --md-code-fg-color: var(--theme-text-light);
-  --md-typeset-table-color: var(--theme-border-color);
-  --md-typeset-table-color--light: hsla(0, 0%, 100%, 0.12); /* Lighter border for tables */
-  --md-footer-bg-color: var(--theme-bg-darker); /* Even darker footer */
-  --md-footer-bg-color--dark: #0a0a0a;
+  --md-accent-bg-color: var(--md-default-bg-color-dark);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.7);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.3);
+  --md-code-bg-color: var(--md-surface-bg-color-dark);
+  --md-typeset-table-color: rgba(255, 255, 255, 0.12);
+  --md-footer-bg-color: #0d0d0d;
+  --md-admonition-bg-color: var(--md-surface-bg-color-dark);
 }
 
-/* --- Background Image --- */
+/* Apply light theme specific overrides */
+[data-md-color-scheme="default"] {
+  --md-code-bg-color: var(--md-surface-bg-color-light);
+  --md-typeset-table-color: rgba(0, 0, 0, 0.12);
+  --md-footer-bg-color: #f5f5f5;
+  --md-admonition-bg-color: var(--md-surface-bg-color-light);
+}
+
+/* --- Background Image (Fixed) --- */
 body {
-  background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), /* Dark overlay for readability */
+  /* Apply dark overlay for better text readability over image */
+  background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Increased overlay opacity */
                     url('https://i.imgur.com/3rjfP8x.png');
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* Keeps image fixed during scroll */
+  background-attachment: fixed; /* Keep image fixed during scroll */
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
-/* Adjust overlay for light mode if needed */
+/* Apply light overlay for light mode */
 [data-md-color-scheme="default"] body {
-   background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), /* Light overlay */
+   background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Increased overlay opacity */
                      url('https://i.imgur.com/3rjfP8x.png');
 }
 
 
-/* --- Navigation Sidebar Styling --- */
-/* Target the primary navigation sidebar's scrollable area */
-.md-sidebar--primary > .md-sidebar__scrollwrap {
-  /* Apply a slightly darker background than the main content area */
-  background-color: var(--md-default-bg-color); /* Start with default */
-  filter: brightness(90%); /* Make it slightly darker */
-  /* Alternatively, define specific darker colors: */
-  /* background-color: var(--theme-bg-surface); */ /* Example for dark mode */
+/* --- Navigation Sidebar Styling (Fixed - Transparent/Darker Shade) --- */
+.md-sidebar--primary {
+  /* Use RGBA to make the default background semi-transparent */
+  /* Dark Mode */
+  background-color: rgba(18, 18, 18, 0.75); /* Based on --theme-bg-dark with alpha */
+  backdrop-filter: blur(5px); /* Optional: Add blur effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari */
+  border-right: 1px solid rgba(255, 255, 255, 0.07); /* Subtle border */
 }
-[data-md-color-scheme="default"] .md-sidebar--primary > .md-sidebar__scrollwrap {
-  /* Slightly darker grey for light mode */
-  background-color: #f5f5f5; /* Example light mode darker shade */
-  filter: brightness(95%);
+
+[data-md-color-scheme="default"] .md-sidebar--primary {
+  /* Light Mode */
+  background-color: rgba(255, 255, 255, 0.75); /* Based on --theme-bg-light with alpha */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-right: 1px solid rgba(0, 0, 0, 0.07); /* Subtle border */
+}
+
+/* Ensure the inner scrollwrap is transparent */
+.md-sidebar--primary > .md-sidebar__scrollwrap {
+  background-color: transparent !important;
 }
 
 
 /* --- Purple Highlights --- */
 
 /* Apply Purple highlight to links on hover */
-.md-typeset a:hover {
-  color: var(--mahadev-purple-accent);
-}
-.md-nav__link:hover {
-  color: var(--mahadev-purple-accent); /* Also apply to nav links */
+.md-typeset a:hover,
+.md-nav__link:hover,
+.md-nav__link--active { /* Highlight active nav link too */
+  color: var(--mahadev-purple-accent) !important; /* Use !important if needed to override */
 }
 
 
@@ -90,14 +99,14 @@ body {
 }
 .md-typeset .note > .admonition-title,
 .md-typeset .note > summary {
-  /* Use a very transparent purple for background */
-  background-color: hsla(261, 51%, 50%, 0.1);
+  background-color: hsla(261, 51%, 50%, 0.1); /* Lighter purple background */
   border: none;
 }
 .md-typeset .note > .admonition-title::before,
 .md-typeset .note > summary::before {
   color: var(--mahadev-purple-accent); /* Purple icon */
+  /* Consider changing the icon itself via mkdocs.yml theme features if desired */
+  /* https://squidfunk.github.io/mkdocs-material/reference/admonitions/#changing-the-icons */
 }
 
 /* Add more custom styles below as needed */
-
