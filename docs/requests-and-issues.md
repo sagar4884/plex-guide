@@ -58,12 +58,10 @@ This helps track issues effectively.
 
 ## Contacting the Admin
 
-If the request tool isn't suitable, or for other questions, you can always contact me (the server admin) directly using one of these methods:
+If the request tool isn't suitable, or for other questions (like password resets or connection problems), you can always contact me (the server admin) directly:
 
 * **Email:** `bladelight.tech@gmail.com`
-* **Signal:** [Your Signal Number/Link - Add if desired]
-* **WhatsApp:** [Your WhatsApp Number/Link - Add if desired]
-* **SMS/iMessage:** [Your Phone Number - Add if desired]
+* **Mobile:** Signal, WhatsApp, or SMS/iMessage *(You should already have my number)*
 
 Please provide the full name of the Movie/Show and a clear description of the problem if reporting an issue directly.
 
