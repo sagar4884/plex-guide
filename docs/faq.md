@@ -54,7 +54,7 @@ This is usually due to the wrong audio track being selected.
 
 1.  **Check URL:** Ensure you are using the correct address: `https://jellyfin.bladelight.tech` (no typos, includes `https://`). See [Connecting to the Server](connecting.md).
 2.  **Check Internet:** Make sure your device has a working internet connection. Try opening a regular website in a browser.
-3.  **Check Server Status:** Contact the admin to see if the server itself might be temporarily down for maintenance.
+3.  **Check Server Status:** Contact the admin (using methods on [Requests & Issues](requests-and-issues.md#contacting-the-admin)) to see if the server itself might be temporarily down for maintenance.
 4.  **Firewall/VPN:** If you are using a VPN or have a strict firewall on your network/device, ensure it's not blocking the connection to the server address.
 
 ### I forgot my password. How do I reset it?

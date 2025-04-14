@@ -42,31 +42,31 @@ nav:
   - Introduction: index.md
   - Getting Started:
       - Connecting to the Server: connecting.md
-      - Basic Navigation & Libraries: basic-navigation.md # New page
+      - Basic Navigation & Libraries: basic-navigation.md
       - Why Jellyfin?: why-jellyfin.md
   - Using the Server:
       - Client Playback Settings: client-settings.md
-      - Selecting Audio & Subtitles: audio-subtitle-selection.md # New page
-      - Offline Viewing (Downloads): offline-viewing.md # New page
+      - Selecting Audio & Subtitles: audio-subtitle-selection.md
+      - Offline Viewing (Downloads): offline-viewing.md
       - Requesting Content & Reporting Issues: requests-and-issues.md
       - Understanding Transcoding: transcoding-explained.md
   - Server Information:
       - Rules & Guidelines: rules.md
       - Privacy & Safety: privacy.md
-      - FAQ: faq.md # New placeholder page
+      - FAQ: faq.md
       - Useful Links: useful-links.md
   - ↪ Logout: javascript:window.location.href='/auth/logout'
 
 # Plugins
 plugins:
-  - search
-  - mkdocs-video
-  - git-revision-date-localized:
+  - search # Built-in search
+  - mkdocs-video # For embedding videos
+  - git-revision-date-localized: # Shows last updated time
       enable_creation_date: true
       type: timeago
-  - git-committers:
+  - git-committers: # Optional: Shows page contributors
       repository: YourUsername/your-repo-name # !!! ACTION REQUIRED: Replace !!!
-      branch: main
+      branch: main # Or your default branch name
       exclude_committers:
         - "web-flow"
         - "actions-user"
@@ -78,6 +78,7 @@ markdown_extensions:
   - toc:
       permalink: true # Adds anchor links to headings
       toc_depth: 3 # Generate TOC up to H3 level
+      marker: '[TOC]' # Explicitly define marker for inline TOCs
   - pymdownx.blocks.caption
   - pymdownx.highlight:
       anchor_linenums: true
@@ -92,6 +93,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Removed pymdownx.arithmatex as it's likely not needed
 
 # Copyright Notice
 copyright: Copyright &copy; 2025 Your Name # !!! ACTION REQUIRED: Replace "Your Name" !!!
@@ -112,3 +114,4 @@ extra:
 #    - icon: fontawesome/solid/globe
 #      link: https://your-website.com
 #      name: Personal Website
+

@@ -41,8 +41,8 @@ Your primary action is simple:
 Other helpful factors:
 
 * **Use Capable Clients:** Modern streaming devices (Nvidia Shield, Apple TV 4K, Fire TV Cube) and dedicated desktop apps (Jellyfin Media Player) generally support more formats (codecs/containers) than web browsers or older devices, leading to more Direct Play.
-* **Choose Text Subtitles:** When available, select SRT (or ASS) subtitles instead of PGS or VOBSUB to reduce the chance of subtitle burn-in causing a transcode.
-* **Understand Bandwidth:** For smooth remote streaming of high-quality files (especially 4K), you need sufficient download speed at your end. If your connection is slow, transcoding to a lower bitrate might be unavoidable (and necessary) for a buffer-free experience.
+* **Choose Text Subtitles:** When available, select SRT (or ASS) subtitles instead of PGS or VOBSUB to reduce the chance of subtitle burn-in causing a transcode. See [Selecting Audio & Subtitles](audio-subtitle-selection.md).
+* **Understand Bandwidth:** For smooth remote streaming of high-quality files (especially 4K), you need sufficient download speed at your end. If your connection is limited, transcoding to a lower bitrate might be unavoidable (and necessary) for a buffer-free experience.
 
 By setting your clients correctly, you help ensure you get the best quality stream possible most of the time!
 
