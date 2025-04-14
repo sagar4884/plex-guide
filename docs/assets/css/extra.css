@@ -40,21 +40,33 @@
   --md-admonition-bg-color: var(--md-surface-bg-color-light);
 }
 
-/* --- Background Image (Fixed) --- */
+/* --- Background Image Handling --- */
+
+/* Force clear any default body background first */
 body {
-  /* Apply dark overlay for better text readability over image */
-  background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Increased overlay opacity */
+  background: none !important;
+}
+
+/* Light Mode Background */
+[data-md-color-scheme="default"] body {
+   background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Light overlay */
+                     url('https://i.imgur.com/3rjfP8x.png');
+   background-size: contain;
+   background-position: center center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+}
+
+/* Dark Mode Background */
+[data-md-color-scheme="slate"] body {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Dark overlay */
                     url('https://i.imgur.com/3rjfP8x.png');
-  background-size: contain; /* Changed from 'cover' to 'contain' */
+  background-size: contain;
   background-position: center center;
-  background-attachment: fixed; /* Keep image fixed during scroll */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
-}
-/* Apply light overlay for light mode */
-[data-md-color-scheme="default"] body {
-   background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Increased overlay opacity */
-                     url('https://i.imgur.com/3rjfP8x.png');
 }
 
 
@@ -62,18 +74,18 @@ body {
 .md-sidebar--primary {
   /* Use RGBA to make the default background semi-transparent */
   /* Dark Mode */
-  background-color: rgba(18, 18, 18, 0.6); /* Alpha changed from 0.75 to 0.6 */
-  backdrop-filter: blur(5px); /* Optional: Add blur effect */
-  -webkit-backdrop-filter: blur(5px); /* Safari */
-  border-right: 1px solid rgba(255, 255, 255, 0.07); /* Subtle border */
+  background-color: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 [data-md-color-scheme="default"] .md-sidebar--primary {
   /* Light Mode */
-  background-color: rgba(255, 255, 255, 0.6); /* Alpha changed from 0.75 to 0.6 */
+  background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-right: 1px solid rgba(0, 0, 0, 0.07); /* Subtle border */
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 /* Ensure the inner scrollwrap is transparent */
@@ -87,8 +99,8 @@ body {
 /* Apply Purple highlight to links on hover */
 .md-typeset a:hover,
 .md-nav__link:hover,
-.md-nav__link--active { /* Highlight active nav link too */
-  color: var(--mahadev-purple-accent) !important; /* Use !important if needed to override */
+.md-nav__link--active {
+  color: var(--mahadev-purple-accent) !important;
 }
 
 
@@ -99,14 +111,12 @@ body {
 }
 .md-typeset .note > .admonition-title,
 .md-typeset .note > summary {
-  background-color: hsla(261, 51%, 50%, 0.1); /* Lighter purple background */
+  background-color: hsla(261, 51%, 50%, 0.1);
   border: none;
 }
 .md-typeset .note > .admonition-title::before,
 .md-typeset .note > summary::before {
-  color: var(--mahadev-purple-accent); /* Purple icon */
-  /* Consider changing the icon itself via mkdocs.yml theme features if desired */
-  /* https://squidfunk.github.io/mkdocs-material/reference/admonitions/#changing-the-icons */
+  color: var(--mahadev-purple-accent);
 }
 
 /* Add more custom styles below as needed */
@@ -121,7 +131,7 @@ body {
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #000000;
+  color: #000000 !important;
 }
 
 /* Dark Mode Headings: Pure White */
@@ -131,5 +141,5 @@ body {
 [data-md-color-scheme="slate"] .md-typeset h4,
 [data-md-color-scheme="slate"] .md-typeset h5,
 [data-md-color-scheme="slate"] .md-typeset h6 {
-  color: #ffffff;
+  color: #ffffff !important;
 }
