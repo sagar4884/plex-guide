@@ -15,8 +15,7 @@ While you don't need to read this guide from start to finish, **new users** shou
 
 * [Connecting to the Server](connecting.md) (How to log in, especially with Jellyfin)
 * [Client Playback Settings](client-settings.md) (Crucial for best quality!)
-* [Requesting Content & Reporting Issues](requests-and-issues.md) (How to ask for media or report problems)
-* Direct Link: [Request Content via Request Tool](https://request.bladelight.tech)
+* [Request Content & Problem reporting: for guide on how use: Requesting Content & Reporting Issues](requests-and-issues.md)
 
 <div id="plex-countdown" style="font-size: 1.5em; font-weight: bold; text-align: center; margin-top: 20px; color: red;"></div>
 
