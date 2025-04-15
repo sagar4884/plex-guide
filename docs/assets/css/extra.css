@@ -126,22 +126,24 @@ body {
 
 /* --- Custom Heading Colors --- */
 
-/* Light Mode Headings: Tacao */
+/* Light Mode Headings: Tacao, Bold */
 [data-md-color-scheme="default"] .md-typeset h1,
 [data-md-color-scheme="default"] .md-typeset h2,
 [data-md-color-scheme="default"] .md-typeset h3,
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #6F3096 !important; /* MODIFIED: Tacao color */
+  color: #6F3096 !important;
+  font-weight: bold; /* ADDED */
 }
 
-/* Dark Mode Headings: Lilac */
+/* Dark Mode Headings: Lilac, Bold */
 [data-md-color-scheme="slate"] .md-typeset h1,
 [data-md-color-scheme="slate"] .md-typeset h2,
 [data-md-color-scheme="slate"] .md-typeset h3,
 [data-md-color-scheme="slate"] .md-typeset h4,
 [data-md-color-scheme="slate"] .md-typeset h5,
 [data-md-color-scheme="slate"] .md-typeset h6 {
-  color: #B65FCF !important; /* MODIFIED: Lilac color */
+  color: #B65FCF !important;
+  font-weight: bold; /* ADDED */
 }
