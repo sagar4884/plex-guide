@@ -42,30 +42,33 @@
 
 /* --- Background Image Handling --- */
 
-/* REMOVED body background rules */
+/* Force clear any default body background first */
+body {
+  background: none !important;
+}
 
 /* Apply background to the main content area instead */
 .md-main__inner {
   /* Define common properties here */
   background-size: contain;
   background-position: center center;
-  background-attachment: fixed; /* Note: Fixed attachment might behave differently on an inner element */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   /* Ensure content area allows background to show */
-  position: relative; /* May be needed depending on theme structure */
-  z-index: 0; /* May be needed depending on theme structure */
+  position: relative;
+  z-index: 0;
 }
 
 /* Light Mode Background on main inner element */
 [data-md-color-scheme="default"] .md-main__inner {
    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Light overlay */
-                     url('https://i.imgur.com/3rjfP8x.png');
+                     url('https://i.imgur.com/NePHIVo.png'); /* Light mode image */
 }
 
 /* Dark Mode Background on main inner element */
 [data-md-color-scheme="slate"] .md-main__inner {
   background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Dark overlay */
-                    url('https://i.imgur.com/3rjfP8x.png');
+                    url('https://i.imgur.com/3rjfP8x.png'); /* Dark mode image */
 }
 
 
@@ -123,22 +126,22 @@
 
 /* --- Custom Heading Colors --- */
 
-/* Light Mode Headings: Pure Black */
+/* Light Mode Headings: Tacao */
 [data-md-color-scheme="default"] .md-typeset h1,
 [data-md-color-scheme="default"] .md-typeset h2,
 [data-md-color-scheme="default"] .md-typeset h3,
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #000000 !important;
+  color: #6F3096 !important; /* MODIFIED: Tacao color */
 }
 
-/* Dark Mode Headings: Pure White */
+/* Dark Mode Headings: Lilac */
 [data-md-color-scheme="slate"] .md-typeset h1,
 [data-md-color-scheme="slate"] .md-typeset h2,
 [data-md-color-scheme="slate"] .md-typeset h3,
 [data-md-color-scheme="slate"] .md-typeset h4,
 [data-md-color-scheme="slate"] .md-typeset h5,
 [data-md-color-scheme="slate"] .md-typeset h6 {
-  color: #ffffff !important;
+  color: #B65FCF !important; /* MODIFIED: Lilac color */
 }
