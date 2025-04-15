@@ -42,31 +42,30 @@
 
 /* --- Background Image Handling --- */
 
-/* Force clear any default body background first */
-body {
-  background: none !important;
-}
+/* REMOVED body background rules */
 
-/* Light Mode Background */
-[data-md-color-scheme="default"] body {
-   background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Light overlay */
-                     url('https://i.imgur.com/3rjfP8x.png');
-   background-size: contain;
-   background-position: center center;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   min-height: 100vh;
-}
-
-/* Dark Mode Background */
-[data-md-color-scheme="slate"] body {
-  background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Dark overlay */
-                    url('https://i.imgur.com/3rjfP8x.png');
+/* Apply background to the main content area instead */
+.md-main__inner {
+  /* Define common properties here */
   background-size: contain;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Note: Fixed attachment might behave differently on an inner element */
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /* Ensure content area allows background to show */
+  position: relative; /* May be needed depending on theme structure */
+  z-index: 0; /* May be needed depending on theme structure */
+}
+
+/* Light Mode Background on main inner element */
+[data-md-color-scheme="default"] .md-main__inner {
+   background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), /* Light overlay */
+                     url('https://i.imgur.com/3rjfP8x.png');
+}
+
+/* Dark Mode Background on main inner element */
+[data-md-color-scheme="slate"] .md-main__inner {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.90), rgba(18, 18, 18, 0.90)), /* Dark overlay */
+                    url('https://i.imgur.com/3rjfP8x.png');
 }
 
 
