@@ -20,7 +20,7 @@ While you don't need to read this guide from start to finish, **new users** shou
 <div id="plex-countdown" style="font-size: 1.5em; font-weight: bold; text-align: center; margin-top: 20px; color: red;"></div>
 
 <script>
-var countDownDate = new Date("July 1, 2025 00:00:00").getTime();
+var countDownDate = new Date("April 26, 2025 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
