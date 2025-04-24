@@ -16,38 +16,14 @@ While you don't need to read this guide from start to finish, **new users** shou
 * [Connecting to the Server](connecting.md) (How to log in, especially with Jellyfin)
 * [Client Playback Settings](client-settings.md) (Crucial for best quality!)
 * [Request Content & Problem Reporting](https://request.bladelight.tech): for guide on how use: [Requesting Content & Reporting Issues](requests-and-issues.md)
-
-<div id="plex-countdown" style="font-size: 1.5em; font-weight: bold; text-align: center; margin-top: 20px; color: red;"></div>
-
-<script>
-var countDownDate = new Date("April 26, 2025 00:00:00").getTime();
-
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Check if the element exists before trying to update it
-  var countdownElement = document.getElementById("plex-countdown");
-  if (countdownElement) {
-      countdownElement.innerHTML = "Plex (*Mahadev*) Decommissioned in: " + days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-      if (distance < 0) {
-        clearInterval(x);
-        countdownElement.innerHTML = "Plex (*Mahadev*) Decommissioned";
-      }
-  } else {
-      // If element doesn't exist, stop the interval
-      clearInterval(x);
-  }
-}, 1000);
-</script>
-
 <br>
-Wondering why we're moving to Jellyfin (*Parvati*)? Read about [the advantages for you](why-jellyfin.md).
+Wondering why we moved to Jellyfin (*Parvati*)? Read about [the advantages for you](why-jellyfin.md).
 
+<iframe
+  src="https://status.bladelight.tech/status/media-server"
+  width="100%"
+  height="600"
+  style="border:1px solid #ccc;"
+  title="Service Status">
+  Your browser doesn't support iframes. Please visit the status page directly: <a href="https://status.bladelight.tech/status/media-server">Status Page</a>
+</iframe>
